@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* class dung chung */
+
+.row {
+    margin: 0 -8px;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.two-cols {
+    width: 50%;
+}
+
+.third-cols {
+    width: 33.333333%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt32 {
+    margin-top: 32px;
+}
+
+/* main */
+
+#wrapper {
+    max-width: 100%;
+
+}
+
+#header {
+    height: 46px;
+    line-height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#nav {
+    list-style-type: none;
+    float: left;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    display: inline-block;
+    padding: 0 24px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li:hover > a {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav .menucon {
+    list-style: none;
+    background-color: #fff;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0 0 8px ;
+    display: none;
+}
+
+#nav .menucon li {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+}
+
+#nav .menucon a {
+    color: #000;
+    display: block;
+    padding: 0 12px;
+    text-transform: none;
+}
+
+#nav li:hover .menucon {
+    display: block;
+}
+
+#search-btn {
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#search-btn:hover {
+    background-color: rgb(214, 89, 89);
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("../img/slider/slider1.jpg") top center / cover no-repeat;
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#slider .content-slider {
+    display: inline-block;
+    padding: 32px 16px;
+}
+
+#slider .head-slider {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+#slider .para-slider {
+    margin: 16px 0;
+}
+
+#wrapper-content {
+    
+}
+
+#wrapper-content .content {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 76px 16px;
+}
+
+#wrapper-content .head-content {
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+#wrapper-content .slowgan {
+    margin-top: 26px;
+    color: #ccc;
+    font-style: italic;
+    text-align: center;
+}
+
+#wrapper-content .para-member-section {
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#wrapper-content .member-section {
+    width: 154px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+#tour-section {
+    background-color: #000;
+}
+
+#tour-section .head-content {
+    color: #fff;
+}
+
+#list-ticket {
+    background-color: #fff;
+    margin-top: 32px;
+}
+
+#list-ticket > li {
+    height: 38px;
+    padding: 8px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.6;
+}
+
+#tour-section .status {
+    display: inline-block;
+    line-height: 22px;
+    margin-left: 16px;
+    padding: 0 8px;
+    background-color: rgb(253, 5, 5);
+    color: #fff;
+}
+
+#tour-section .btn-ticket {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 16px;
+    float: right;
+    text-align: center;
+}
+
+#tour-section .place-tour {
+    width: 100%;
+    display: block;
+}
+
+#tour-section .place-tour:hover {
+    opacity: 0.6;
+}
+
+#tour-section .content-place {
+    padding: 15px 16px;
+    background-color: #fff;
+    text-align: left;
+}
+
+#tour-section .head-content-place {
+    
+}
+
+#tour-section .date-tour {
+    color: #ccc;
+    margin-top: 15px;
+}
+
+#tour-section .detail-tour {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+#tour-section .buy-ticket-btn {
+    margin-top: 15px;
+    background-color: black;
+    display: inline-block;
+}
+
+#tour-section .buy-ticket-btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#tour-section .buy-ticket-btn a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+}
+
+#contact-section #infor-contact {
+    line-height: 1.6;
+}
+
+#contact-section #infor-contact i {
+    display: inline-block;
+    width: 20px;
+}
+
+#contact-section .form-input {
+    height: 38px;
+    padding: 8px;
+}
+
+#contact-section .message-input {
+    width: 100%;
+    height: 38px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+#contact-section .send-btn {
+    color: #fff;
+    background-color: #000;
+    height: 38px;
+    padding: 8px 16px;
+    margin: 16px 0;
+    float: right;
+    border: none;
+}
+
+/* MAP SECTION */
+#map {
+    padding-top: 50%;
+    background: url("../img/map/map.jpg") top center / cover no-repeat;
+}
+
+/* footer section */
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+}
+
+#icon-mxh a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+#icon-mxh a:hover {
+    opacity: 0.4;
+}
+
+#powered {
+    color: #000;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+#powered a {
+    color: inherit;
+}
+
